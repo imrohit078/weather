@@ -3,7 +3,7 @@ from django.shortcuts import render
 from .forms import WeatherForm
 
 def get_weather_data(city):
-    api_key = 'b83ab54266114418d641392d8201fd7b'  # add your api key here
+    api_key = 'Add Your API key here'  # add your api key here
     base_url = 'http://api.openweathermap.org/data/2.5/weather'
     params = {'q': city, 'appid': api_key, 'units': 'metric'}
     response = requests.get(base_url, params=params)
